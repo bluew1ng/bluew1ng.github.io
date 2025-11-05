@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kim Dokja
+    </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1B1B1B;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: "PT Serif", serif;
+        }
+
+        .container { 
+            display: flex;
+            width: 1512px;
+            height: 982px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 60px;
+            border-radius: 20px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            gap: 40
+
+        }
+
+        /* Left Side (portrait, name, buttons and text!! */
+        
+        .left-side {
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 80px;
+
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+        
+        #dokja-picture {
+            width: 270px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .name-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        #navigation {
+            display: flex;
+            gap: 25px;
+            position: sticky;
+            top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+       
+        a button {
+            background-color: #124D9A;
+            color: #FFFF;
+            font-family: "PT Serif", serif;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 400;
+
+
+            width: 203px;
+            height: 87px;
+            border: none;
+            border-radius: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            
+        }
+
+
+        a:hover button {
+
+            background-color: #2ca1ef;
+            color: #000000; 
+            font-weight: 800; 
+            letter-spacing: 4px;
+        }
+    
+        
+        #TheReader {
+            flex-shrink: 0;
+            color: #FFFF;
+            font-family: "PT Serif";
+            font-size: 64px;
+            font-style: italic;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0;
+        }
+
+        #sectionHeadings{
+
+            color: #1E99E5;
+            font-size: 55px;
+            font-style: italic;
+            font-weight: 700;
+            line-height: normal;
+            margin: 5px 0 10px 0;
+            flex-shrink: 0;
+        }
+
+        #intro { 
+       
+            color: #FFF;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            max-width: 650px;
+
+        }
+
+        #intro em { 
+        
+            color: #1E99E5;
+            font-style: italic;
+        }
+
+                
+
+        /* Right Side (image!) */
+
+        .right-side img {
+            width: 654px;
+            height: 1200px;
+            object-fit: cover;
+            border-radius: 20px;
+
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                width: 100%;
+                padding: 20px;
+            }
+            
+            .right-side img {
+                width: 100%;
+                height: auto;
+            }
+
+            #navigation a button {
+                width: 100%;
+                font-size: 24px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="left-side">
+            <div class="profile-header">
+                <img src="./dokjadokja.png.webp" id="dokja-picture" alt="A picture of a reader">
+                <div class="name-block">
+                    <header id="TheReader">Kim Dokja</header>
+                    <p id="sectionHeadings">김독자</p>
+                </div>
+            </div>
+       
+        <nav id="navigation">
+
+            <a href="#synopsis"><button>synopsis</button></a>
+            <a href="#abilities"><button>abilities</button></a>
+            <a href="#stories"><button>stories</button></a>
+        
+        </nav>
+
+
+
+        <section id="intro">
+
+            The main protagonist of <em>Omniscient's Reader Viewpoint</em>. The sole reader of the webnovel <em>Three Ways to Survive in a Ruined World</em>, an apocalyptic fantasy story written by tls123 that he read it through the end.
+
+
+        </section>
+        </div>
+
+
+
+        <div class="right-side">
+            <img src=" ./dokja.jpg" id="dokja-full-picture" alt="A bigger picture of a reader">
+        </div>
+
+    </section>
+
+</body>
+
+</html>
